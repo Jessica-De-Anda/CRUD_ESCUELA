@@ -1,36 +1,48 @@
 # CRUD_ESCUELA
-Implementación de un patrón de diseño arquitectónico de software por capas.
+Implementación de un patrón de diseño arquitectónico en capas
 
-Muestra una aplicación web interpretada en un servidor local, desarrollada en capas y codificada en lenguaje php.
+Este proyecto desarrolla una aplicación web interpretada en un servidor local, utilizando un enfoque por capas y codificada en PHP.
+
+La herramienta implementa un patrón de diseño arquitectónico en capas, permitiendo realizar las siguientes operaciones sobre una base de datos relacional:
+
+## Crear: Registra nuevos datos con sus atributos y los guarda en la base de datos.
+## Leer: Recupera un registro y muestra sus atributos en una página web.
+## Actualizar: Modifica los atributos de un registro existente.
+## Eliminar: Borra un registro de la base de datos.
+
+El objetivo es mostrar cómo se puede organizar una aplicación web mediante un diseño estructurado y funcional.
 
 # SOFTWARE DE APOYO
 
-+ XAMPP
-+ VISUAL STUDIO CODE
+## XAMPP
 
 Instalación XAMP
 Instalación y configuración del software para desarrollo de aplicaciones web XAMPP.
 
+![Captura de pantalla (58)](https://github.com/user-attachments/assets/f0be0829-7bb2-4597-9f7f-6fa6be2b2170)
 
+![Captura de pantalla (59)](https://github.com/user-attachments/assets/f267e07a-c416-435a-99fe-4892b95211f7)
 
+![Captura de pantalla (60)](https://github.com/user-attachments/assets/1b88d6ac-4ff0-4c69-b9a5-fd0911cb6ac4)
 
+![Captura de pantalla (61)](https://github.com/user-attachments/assets/6c27fdba-0be6-4aab-9661-fe7fca0aeccf)
 
-![2020-10-26 (1)](https://github.com/user-attachments/assets/bcd80f29-2679-4c17-afff-0e800f15c650)
+![Captura de pantalla (62)](https://github.com/user-attachments/assets/1da013ee-1a42-46c2-85df-b9ce0d8d714e)
 
+![Captura de pantalla (63)](https://github.com/user-attachments/assets/f706b199-94e0-43fc-ac5d-3b7bc26be3d2)
 
+## REFERENCIAS 
 
-El Diagrama 2, mustra la ruta lógica de instalación local del proyecto: https://github.com/miRepositorioGit/tresCapasPhp/archive/refs/heads/main.zip
+https://github.com/miRepositorioGit/tresCapasPhp/blob/c3fb59373e917307541158f4577c7e27e8ddc327/Miscelaneos/instalacionConfiguracionXampp_V120.pdf
 
-tresCapasPhp
-├── credenciales.php
-└── index.php
-	├─modelo
-	├─controlador
-	└─vista
-Diagrama 1. Estructura monolítica.
+# ESTRUCTURA
+
+![Captura de pantalla (64)](https://github.com/user-attachments/assets/a00cd86b-1621-4812-8bde-e16512b9098d)
+
 
 Desarrollo.
-Muestra una aplicación web desarrollada por capas contenidas monolíticamente y codificada en Php con distintas responsabilidades y fuertemente acopladas. Una estructura de código monolítca, es una práctica recurrente en aplicaciones básicas y, o sencillas, como se muestra en el Diagrama 1.
+Muestra una aplicación web desarrollada por capas contenidas monolíticamente y codificada en Php con distintas responsabilidades y fuertemente acopladas. Una estructura de código monolítca, es una práctica recurrente en aplicaciones básicas y, o sencillas.
+
 
 Tiene las siguientes prácticas de desarrollo de software:
 
@@ -40,16 +52,57 @@ Tiene las siguientes prácticas de desarrollo de software:
 4. NO es apropiado para aplicaciones medianas a grandes, donde conviven otras tecnológias de software.
 5. NO se recomienda que una misma tecnología de código, renderize la interfaz de usuario.
 6. NO cumple con el principio de responsabilidad única 1.
-7. El método divide y venceras es difícil de aplicar, dado el nivel de acoplamiento y amplitud del proyecto 2.
-capasModeloVistaControlador
-Figura 1. Capas en aplicación web.
 
-Se muestra que en la parte superior de la Figura 1, existe una petición de un recurso electrónico, integrada por un tercia de elementos constructivos de un direción web. Así también, se presenta la iteración entre objetos_Interfaz (conn, result, row[]), interactuando solicitudes request de datos entre las capas de: vista↔controlador↔modelo. Caracterizado en la Tabla 1.
+# Implementa un patron de dieño arquitectónico de software por capas
 
-objetos_Interfaz	Caracterización
-conn	Es un objeto del tipo mysql. Vincula una conexión al servidor MySQL.
-result	Retorna un arreglo asociativo de registros de una base de datos.
-row[]	Es un deserealizador de objetos.
-Tabla 1. Objetos tipo request.
+## Estructura y manejo de dependencias en el proyecto
+
+El árbol de dependencias refleja la implementación desarrollada. 
+
+Una petición URL es gestionada por el archivo .htaccess, un archivo de texto utilizado para configurar el comportamiento del servidor Apache. Este archivo permite:
+
+Redirigir una petición URL genérica hacia la carpeta /public.
+Restringir la indexación del contenido del proyecto por motores de búsqueda o usuarios no autorizados.
+La estructura de archivos del proyecto se organiza en dos carpetas principales:
+
+/app: Contiene colecciones de carpetas con recursos de soporte para el desarrollo de la aplicación. Su contenido es accesible únicamente para los desarrolladores.
+/public: Contiene colecciones de carpetas con los recursos disponibles para las peticiones realizadas por los usuarios.
+Esta organización garantiza la seguridad y el correcto flujo de solicitudes en la aplicación.
+
+![Captura de pantalla (65)](https://github.com/user-attachments/assets/2d60bfd0-c28c-4172-a165-c508cd43efce)
 
 
+# Guía de instalación y uso del proyecto
+
+## Descarga del proyecto:
+
+1. Descarga el contenido del repositorio llamado CRUD_ESCUELA y renómbralo como ESCUELA si es necesario.
+Preparación del proyecto:
+
+2.Descomprime el archivo descargado y colócalo en la carpeta htdocs de tu instalación de XAMPP.
+Inicialización de servicios:
+
+3. Ejecuta como administrador la aplicación xampp-control.exe.
+Activa los servicios de Apache y MySQL.
+Configuración de la base de datos:
+
+4. Abre phpMyAdmin en tu navegador.
+Crea una base de datos con el nombre escuela.
+Importa el archivo secundarias.sql en la base de datos recién creada.
+Prueba del proyecto:
+
+5. En la barra de direcciones de tu navegador, escribe la URL ESCUELA/ para acceder a la aplicación.
+Operaciones CRUD:
+
+6. Crear: Selecciona "Dar de alta una secundaria", completa todos los campos del formulario y haz clic en Enviar.
+Modificar: Selecciona "Modificar", edita uno o más campos y presiona Enviar.
+Eliminar: Selecciona "Borrar" y revisa los registros actualizados en la tabla.
+Consulta de información:
+
+7. Escribe la URL CRUD_LeeMe/secundaria/info en la barra de direcciones para acceder a la información de la tabla.
+
+# REFERENCIAS
+
+https://github.com/miRepositorioGit/tresCapasPhp.git
+
+https://github.com/miRepositorioGit/CRUD.git
