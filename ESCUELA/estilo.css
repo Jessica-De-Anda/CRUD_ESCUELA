@@ -1,0 +1,152 @@
+body {
+    background: #f17d7d;
+}
+
+a {
+    color: #faf5f5;
+    text-decoration: none;
+    font-family:initial;
+}
+
+a:hover {
+    color: #ff1313;
+    background: #ffffff;
+}
+
+h1 {
+    font-family: serif;
+}
+
+h2 {
+    font-family: sans-serif;
+
+}
+
+h3 {
+    font-family: monospace;
+}
+
+.indent {
+    margin-left: 10px;
+}
+
+.gap_below {
+    margin-bottom: 25px;
+}
+
+.thin_border {
+    border: 2px solid rgb(255, 152, 152);
+}
+
+.relleno {
+    background: #b2edff;
+}
+
+.relleno2 {
+    background: #d67cff;
+}
+
+.callout {
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    margin-left: 20px;
+    max-width: 300px;
+}
+
+.callout-header {
+    padding: 25px 15px;
+    background: #ff8903;
+    font-size: 30px;
+    color: white;
+}
+
+.callout-container {
+    padding: 15px;
+    background-color: #ffffff;
+    color: rgb(5, 29, 248)
+}
+
+.closebtn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: rgb(237, 103, 255);
+}
+
+.img_1 {
+    padding-inline: 20px;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #fd0707;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+/* Style the submit button with a specific background color etc */
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+
+input[type=submit]:hover {
+    background-color: #cf3dec;
+}
+
+
+/* Add a background color and some padding around the form */
+
+.container {
+    border-radius: 20px;
+    background-color: #ffba9b;
+    padding: 20px;
+}
+
+@media (min-width:750px) {
+    .responsive {
+        display: inline-block;
+        width: 200px;
+        border: 1px solid rgb(233, 69, 19);
+    }
+}
+
+@media (min-width:1000px) {
+    .responsive {
+        display: inline-block;
+        width: 500px;
+        border: 1px solid rgba(154, 230, 129, 0.855);
+    }
+}
