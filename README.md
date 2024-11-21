@@ -3,6 +3,23 @@ Implementación de un patrón de diseño arquitectónico de software por capas.
 
 Muestra una aplicación web interpretada en un servidor local, desarrollada en capas y codificada en lenguaje php.
 
+# SOFTWARE DE APOYO
+
++ XAMPP
++ VISUAL STUDIO CODE
+
+Instalación XAMP
+Instalación y configuración del software para desarrollo de aplicaciones web XAMPP.
+
+git add C:\Users\deand\OneDrive\Imágenes\Capturas de pantalla
+
+
+
+
+
+
+El Diagrama 2, mustra la ruta lógica de instalación local del proyecto: https://github.com/miRepositorioGit/tresCapasPhp/archive/refs/heads/main.zip
+
 tresCapasPhp
 ├── credenciales.php
 └── index.php
@@ -34,9 +51,4 @@ result	Retorna un arreglo asociativo de registros de una base de datos.
 row[]	Es un deserealizador de objetos.
 Tabla 1. Objetos tipo request.
 
-Instalación.
-Se recomienda dar lectura al documento de instalación y configuración del software para desarrollo de aplicaciones web XAMPP.
 
-https://github.com/miRepositorioGit/tresCapasPhp/blob/main/Referencias/instalacionConfiguracionXampp_V120.pdf
-
-El Diagrama 2, mustra la ruta lógica de instalación local del proyecto: https://github.com/miRepositorioGit/tresCapasPhp/archive/refs/heads/main.zip
