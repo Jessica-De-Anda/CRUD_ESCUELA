@@ -11,10 +11,11 @@ Muestra una aplicación web interpretada en un servidor local, desarrollada en c
 Instalación XAMP
 Instalación y configuración del software para desarrollo de aplicaciones web XAMPP.
 
-git add C:\Users\deand\OneDrive\Imágenes\Capturas de pantalla
 
 
 
+
+![2020-10-26 (1)](https://github.com/user-attachments/assets/bcd80f29-2679-4c17-afff-0e800f15c650)
 
 
 
